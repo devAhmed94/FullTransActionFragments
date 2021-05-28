@@ -1,0 +1,2 @@
+rootProject.name = "FullTransActionFragments"
+include ':app'

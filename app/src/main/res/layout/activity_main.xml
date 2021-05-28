@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.activities.MainActivity">
+
+  <FrameLayout
+    android:id="@+id/fContainer"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" >
+
+    <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/fragmentContainerView"
+      android:name="com.example.fullTransactionFragments.ui.fragments.FirstFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+  </FrameLayout>
+
+  <FrameLayout
+    android:id="@+id/sContainer"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
